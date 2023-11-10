@@ -8,14 +8,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"> -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
 <section class="header">
     <nav>
         <a href="index.html"><img src="img/logo.png"></a>
-        <div class="nav-links">
-            <i class="fa fa-times"></i>
+        <div class="nav-links" id="navLinks">
+            <!-- <i class="fas fa-times"></i>÷\ -->
+            <span class="material-symbols-outlined" onclick="hideMenu()">close</span>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -25,7 +30,8 @@
                 </ul>
                 
         </div>
-        <i class="fas fa-bars"></i>
+        <!-- <i class="fas fa-bars"></i> -->
+        <span class="material-symbols-outlined" onclick="showMenu()">menu</span>
     </nav>
 
 <div class="text-box">
@@ -38,6 +44,43 @@
     
 </section>
 
-    
+<!-- -------course------- -->
+
+<section class="course">
+    <h1>Courses We Offer</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis aliquid dignissimos ratione esse nulla voluptate architecto excepturi, consequuntur tenetur eos modi ullam minus ab? Sit dignissimos dolorum perferendis vitae tenetur.</p> 
+
+    <div class="row">
+        <div class="course-col">
+            <h3>A-Level</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, repellat. Eum ratione sequi illo architecto libero ad qui quibusdam, amet quasi deserunt itaque pariatur delectus, laboriosam placeat facilis quod eos.</p>
+        </div>
+        <div class="course-col">
+            <h3>Degree</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, repellat. Eum ratione sequi illo architecto libero ad qui quibusdam, amet quasi deserunt itaque pariatur delectus, laboriosam placeat facilis quod eos.</p>
+        </div>
+        <div class="course-col">
+            <h3>Post Graduate</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, repellat. Eum ratione sequi illo architecto libero ad qui quibusdam, amet quasi deserunt itaque pariatur delectus, laboriosam placeat facilis quod eos.</p>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+<!---------JavaScript for Menu Toggle-------------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0"
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+</script>
+
 </body>
 </html>
