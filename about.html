@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design - Vincent</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"> -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,1..1,-50..200" />
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="home.html"><img src="img/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <!-- <i class="fas fa-times"></i>÷\ -->
+            <span class="material-symbols-outlined" onclick="hideMenu()">close</span>
+                <ul>
+                    <li><a href="home.html">HOME</a></li> 
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
+                
+        </div>
+        <!-- <i class="fas fa-bars"></i> -->
+        <span class="material-symbols-outlined" onclick="showMenu()">menu</span>
+    </nav>
+    <h1>About Us</h1>
+
+    
+</section>
+
+<!-- ----------- about us content ---------- -->
+ 
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>We are the world's largest University</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati velit aut corporis animi, illum ipsam dolor maiores officia eius, vero nisi dolores! Cupiditate debitis consequatur laborum minus consequuntur totam suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos libero cupiditate voluptatum asperiores facere, dolore, aut magni numquam quo iusto vel consectetur laboriosam consequatur sit autem harum quam? Voluptatum, officia!</p>
+            <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+            <img src="img/about.jpg" alt="">
+        </div>
+    </div>
+</section>
+
+
+
+<!-- -----------footer----------- -->
+
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, veniam amet delectus qui provident natus culpa quisquam  <br> error non dolores tempore, in rem. Eaque, labore? Quasi est perferendis ab non!</p>
+
+    <div class="icons">
+        <span class="material-symbols-outlined">facebook</span>
+        <span class="material-symbols-outlined">twitter</span>
+        <span class="material-symbols-outlined">instagram</span>
+        <span class="material-symbols-outlined">linkedin</span> 
+    </div>
+    <p>Made by Vincent</p>
+</section>
+
+
+<!---------JavaScript for Menu Toggle-------------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0"
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+</script>
+
+</body>
+</html>
